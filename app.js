@@ -81,11 +81,11 @@ const SCRIPT = [
   ['type', 'claude'],
   ['html', '\n<span class="tm">✻ Welcome back. Reading CLAUDE.md... I remember where we left off.</span>\n\n'],
   ['html', '<b>you ›</b> '],
-  ['type', 'organize 2 years of photos by date, then build me a workout tracker I can open'],
-  ['html', '\n<span class="tc">agent ›</span> Plan: sort photos into year and month, then create tracker.html. OK?\n'],
+  ['type', 'build me an app to track my clients and invoices, install whatever it needs'],
+  ['html', '\n<span class="tc">agent ›</span> Plan: set up the project, install the tools it needs, build the app. OK?\n'],
   ['html', '<b>you ›</b> '],
   ['type', 'go'],
-  ['html', '\n<span class="tg">✓</span> 1,847 photos sorted into 24 folders\n<span class="tg">✓</span> workout-tracker.html built, open it in your browser\n\n'],
+  ['html', '\n<span class="tg">✓</span> installed the tools it needed (you touched nothing)\n<span class="tg">✓</span> client tracker built, open it in your browser\n\n'],
   ['html', '<span class="tm">No code written by you. This is lesson 8 of 28.</span>'],
 ];
 
