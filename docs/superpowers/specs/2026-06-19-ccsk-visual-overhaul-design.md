@@ -126,6 +126,32 @@ fact (keep the honest framing already in place).
 - Re-render all `_illus` → `img/`; security re-scan (`grep` for keys/paths/real name) on every
   published file; commit + push both repos.
 
+### 6. Course content — "The 6 Power Phrases" (new lesson)
+A new Power Vault lesson consolidating the high-leverage phrases beginners should type, in plain
+English with copy-paste lines. Four of six already map to existing kit concepts — cross-link, don't
+duplicate.
+1. **"Launch sub-agents"** — run work in parallel / get independent perspectives. Phrase: "Launch [X] sub-agents to handle this." (ties to `/agents`, Claude Flow).
+2. **"Write me an implementation spec"** — force a plan before code; make it list the key decisions so you can override them first. Phrase: "Write me an implementation spec to build X, and outline the key decisions at each step so I can override them." (ties to M5 Plan-Review-Execute).
+3. **"Interview me"** — when you can't write the spec yourself, let it ask you. Phrase: "Work with me to identify the core problem, who it's for and not for, and the key decisions; then summarize it back as an implementation spec."
+4. **"Verify before you build"** — no task is done without a feedback loop. 3 layers: CLAUDE.md forces a verify plan; enable verify tools (browser MCP / validators); mark Human Validation Zones (payments, anything risky). (ties to CLAUDE.md lesson + honesty).
+5. **"Based on this conversation, build me a skill"** — build skills from workflows you just did, add a "gotchas" section so quality compounds. (ties to `/skillator`, Skills poster).
+6. **"Automate this" — the cautionary one** — automation = operational debt + "AI slop" at scale. Prefer augmentation. Two filters before automating: the **Taste Test** (needs subjective taste → augment, don't automate) and the **80/20 Output** (would 80%-of-a-human be fine? then automate). (reinforces M6 honesty).
+Reuse/extend `command-deck.png` to surface these phrases visually.
+
+### 7. Persuasion pass — honest influence (decision: Option 1)
+Apply sales psychology **through truth**, never dark patterns. **Central frame:** you gain *an AI
+employee / a tool that makes you broadly more productive* — the empowering message leads. "Missing
+the AI train" appears only as a light, understandable nudge, never fear-mongering. No fake
+countdowns, fake scarcity, or fake reviews (those would betray the page's honesty, which is itself
+the strongest trust lever). Mapping to sections:
+- **Believe / conviction** → keep the "built by the agent itself" authenticity; tighten verbs to read as genuine conviction.
+- **Sell yourself first** → strengthen "Who's behind this": a real beginner who figured it out, answers your emails personally → trust before product.
+- **Pain → escape (light)** → the existing "Pain" section, reframed as *cost of staying at half-power / doing by hand what an employee could do*, then the positive payoff. Empowerment, not dread.
+- **NO = information** → FAQ already does objection-handling; keep honest, answer the real blockers.
+- **Be fearless** → confident, non-apologetic CTA copy.
+- **Strategic silence** → CTA gets breathing room (whitespace), price stated plainly without over-justifying.
+- **Power-phrases teaser** → a one-line hint in the "Your arsenal" section: "you'll learn the exact phrases pros type." Links the new lesson to the landing.
+
 ## Data flow
 
 `HUB` array (single source of truth in `build-course.js`) → poster `_illus` HTML reads the same

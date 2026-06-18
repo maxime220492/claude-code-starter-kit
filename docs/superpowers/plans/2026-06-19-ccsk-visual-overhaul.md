@@ -350,7 +350,39 @@ Expected: `CLEAN` (allow only the intentional public email + the github.io usern
 
 ---
 
+### Task 19: Course — "The 6 Power Phrases" lesson + landing teaser
+
+**Files:** Modify `claude-code-starter-kit-gumroad/build-course.js` (add a Power Vault lesson) and/or `course-export/07-power-vault/`; regenerate `course/index.html`. Modify landing `index.html` (one-line teaser in the arsenal section). Extend `_illus/command-deck.html` if surfacing phrases there.
+
+- [ ] **Step 1:** Read `build-course.js` to find how Power Vault lessons are defined; add a new lesson "The 6 Power Phrases" using the spec §6 content (exact phrases, copy-paste lines, the Taste Test + 80/20 filters for "Automate this"). Cross-link to existing lessons (`/agents`, M5 spec, CLAUDE.md verify, `/skillator`) rather than duplicating.
+- [ ] **Step 2:** Regenerate `node build-course.js`; verify the lesson renders in the sidebar + content.
+- [ ] **Step 3:** In landing `index.html` arsenal section, add a one-line teaser: "And the exact power-phrases pros type — like \"write me an implementation spec\" — decoded with copy-paste briefings."
+- [ ] **Step 4: Verify** — open course + landing, confirm lesson + teaser read well, honest framing on "Automate this" (augment > automate).
+- [ ] **Step 5:** Commit landing only (`git add index.html && git commit -m "feat(landing): power-phrases teaser in arsenal"`). Course = no git (manual Netlify per Task 18).
+
+---
+
+### Task 20: Landing — honest-influence persuasion pass (spec §7)
+
+**Files:** Modify landing `index.html` (hero, Pain, Who, FAQ, CTA copy), `styles.css` (CTA whitespace only if needed). Copy-only changes; no new claims of fact.
+
+**Global guardrail:** Option 1 — influence through truth. Central frame = "an AI employee / tool that makes you broadly more productive." No fake countdowns/scarcity/reviews. Keep refund chip + honest cost box.
+
+- [ ] **Step 1:** Hero/manifesto — tighten to lead with the empowering employee/productivity frame; keep "built by the agent itself" conviction.
+- [ ] **Step 2:** Pain section — reframe as *cost of staying at half-power / doing by hand what an employee could do*, then pivot to the positive payoff. Light "AI train" nudge, no dread.
+- [ ] **Step 3:** "Who's behind this" — strengthen the personal-trust angle (real beginner, answers emails personally) so trust precedes the product.
+- [ ] **Step 4:** CTA — confident, non-apologetic wording; give the final CTA breathing room (whitespace) and state price plainly without over-justifying.
+- [ ] **Step 5: Verify** — re-read the full page top-to-bottom: does it still read HONEST (no dark patterns), with the employee/productivity message leading? Screenshot hero + pain + CTA in Chrome.
+- [ ] **Step 6:** Commit `git add index.html styles.css && git commit -m "copy(landing): honest-influence persuasion pass (employee/productivity frame)"`
+
+---
+
 ## Self-Review
+
+**Added-scope coverage (post-approval additions):**
+- Spec §6 "6 Power Phrases" lesson + landing teaser → Task 19. ✓
+- Spec §7 honest-influence persuasion pass (Option 1, employee/productivity frame) → Task 20. ✓
+- These run after the visual tasks; Task 20 (copy) is independent of illustrations and can proceed in parallel with course wiring.
 
 **Spec coverage:**
 - §1 style system → Task 0 (`_kit.css`) + tokens in Global Constraints. ✓
