@@ -388,3 +388,12 @@ footer { padding: 3.5rem 0 6.5rem; border-top: 1px solid var(--line); margin-top
 @media (max-width: 760px) {
   .cta-row.left .btn { width: 100%; text-align: center; }
 }
+
+/* ════════ Illustrations (rendered PNGs) ════════ */
+figure.illus-fig { margin: 1.6rem 0 0; }
+.illus { display: block; width: 100%; height: auto; margin: 1.6rem auto 0; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 26px 60px -34px hsl(225 60% 2% / .9); }
+.illus-cap { text-align: center; color: var(--text-soft); font-size: .9rem; margin: .7rem auto 0; max-width: 60ch; }
+
+/* ════════ Your arsenal ════════ */
+.arsenal .sub { max-width: 64ch; margin-inline: auto; }
+.arsenal .caption { margin-top: .8rem; }
