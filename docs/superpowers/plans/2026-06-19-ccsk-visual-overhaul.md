@@ -312,7 +312,7 @@ Add `.hub-poster{display:block;width:100%;height:auto;margin:6px 0 22px;border:1
 
 - [ ] **Step 3:** Regenerate: `cd /c/Users/maxim/claude-code-starter-kit-gumroad && node build-course.js`. Expected: `course/index.html` rewritten.
 - [ ] **Step 4: Verify** — open `course/index.html`, navigate to The Toolbox, switch category filters, confirm each poster shows above its cards (images 404 until landing repo is pushed — note that; verify markup + local fallback by temporarily pointing one to the local `../claude-code-starter-kit-landing/img/`).
-- [ ] **Step 5: Commit** `cd /c/Users/maxim/claude-code-starter-kit-gumroad && git add build-course.js course/index.html && git commit -m "feat(course): category posters in the Toolbox hub"`
+- [ ] **Step 5: NO git here.** The course dir is NOT a git repo and deploys manually to Netlify. Deliverable = regenerated `course/index.html` + edited `build-course.js` saved on disk. Deployment happens in Task 18 (manual Netlify upload). Do not `git init` or commit this repo.
 
 ---
 
@@ -328,7 +328,7 @@ Add `.hub-poster{display:block;width:100%;height:auto;margin:6px 0 22px;border:1
 - [ ] **Step 2:** Insert image references at those points (markdown `![alt](https://maxime220492.github.io/.../img/<name>.png)` or the build's image syntax), each with descriptive alt. Tighten the surrounding sentence so the "why" precedes the visual (pedagogy pass — light copy edits only, no invented facts).
 - [ ] **Step 3:** Regenerate `node build-course.js`.
 - [ ] **Step 4: Verify** — open `course/index.html`, visit each edited lesson, confirm image placement + that explanation reads "why before do".
-- [ ] **Step 5: Commit** `git add build-course.js course-export course/index.html && git commit -m "feat(course): pedagogy illustrations in M2-M4 + memory lesson"`
+- [ ] **Step 5: NO git here.** Same as Task 16: course dir is not git-tracked. Deliverable = saved `build-course.js` + regenerated `course/index.html`. Manual Netlify deploy in Task 18.
 
 ---
 
@@ -345,8 +345,8 @@ Expected: `CLEAN` (allow only the intentional public email + the github.io usern
 - [ ] **Step 2: Render sanity** — `node _illus/render.mjs` (all) once more; spot-check 3 PNGs (Read tool) for regressions.
 - [ ] **Step 3: Landing full-page verify** — open `index.html` in Chrome at 1440 + 375; screenshot top-to-bottom; confirm every `<img>` loads, alt present, no layout breakage, honest tone intact.
 - [ ] **Step 4: Push landing** `cd /c/Users/maxim/claude-code-starter-kit-landing && git push` → wait, then hard-refresh `https://maxime220492.github.io/claude-code-starter-kit/` and confirm new images live.
-- [ ] **Step 5: Course verify after landing is live** — reopen `course/index.html`; confirm posters + pedagogy images now resolve from github.io. Push course repo `cd /c/Users/maxim/claude-code-starter-kit-gumroad && git push` (and redeploy the Netlify members build per the project's existing deploy step).
-- [ ] **Step 6: Final commit (if any verify fixes)** and report: list every new/changed asset + the two live URLs.
+- [ ] **Step 5: Course verify after landing is live** — reopen `course/index.html`; confirm posters + pedagogy images now resolve from github.io. The course is NOT auto-deployed: hand Maxime the regenerated `course/index.html` (and `course/` folder) for **manual Netlify upload** (drag-and-drop to the existing members site `claudecodekit-ccsk-members-…netlify.app`). Give exact upload instructions.
+- [ ] **Step 6: Final commit (landing only, if any verify fixes)** and report: list every new/changed asset, the live landing URL, and the manual step left for the course.
 
 ---
 
