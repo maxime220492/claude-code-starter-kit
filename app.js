@@ -171,12 +171,16 @@ function setBuddyStop(index, el) {
    while you scroll, until the next section appears and it hops over. */
 function buddyFrame() {
   if (buddyShown && buddyTargetEl) {
+    const rect = buddyTargetEl.getBoundingClientRect();
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    /* Float along the right edge at a comfortable height, ALWAYS on-screen,
-       so it rides the scroll smoothly instead of flying off a section's corner. */
-    let targetX = vw - 104;
-    let targetY = Math.min(Math.max(vh * 0.58, 100), vh - 160);
+    /* Perch near the active section's top-right corner and hop along as you scroll... */
+    let targetX = Math.min(rect.right - 42, vw - 104);
+    targetX = Math.max(targetX, 40);
+    let targetY = rect.top - 70;
+    /* ...but ALWAYS stay on-screen: if the section scrolled above the top, the buddy
+       waits near the top of the viewport instead of flying off and vanishing. */
+    targetY = Math.min(Math.max(targetY, 90), vh - 150);
     const deltaX = targetX - buddyX;
     const deltaY = targetY - buddyY;
     buddyX += deltaX * 0.15;
