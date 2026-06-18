@@ -332,3 +332,59 @@ footer { padding: 3.5rem 0 6.5rem; border-top: 1px solid var(--line); margin-top
   .b-mod { font-size: .7rem; padding: .3rem .45rem; }
   .sticky-txt s { display: none; }
 }
+
+/* ════════ Hero split (v2) ════════ */
+.hero-grid { display: grid; grid-template-columns: 1fr 1.08fr; gap: clamp(2rem, 1.5rem + 2.5vw, 4rem); align-items: center; text-align: left; }
+.hero-copy { min-width: 0; }
+.hero .punch { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.25rem, 1rem + 1.3vw, 1.95rem); line-height: 1.2; margin-top: 1.4rem; color: var(--text); }
+.sub-left { color: var(--text-soft); font-size: 1.02rem; margin-top: 1rem; max-width: 48ch; }
+.cta-row.left { justify-content: flex-start; margin-top: 1.7rem; }
+.cta-chips { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin-top: 1.1rem; font-family: var(--font-mono); font-size: .8rem; color: var(--text-soft); }
+.cta-chips s { color: var(--text-soft); }
+.built-badge { margin-top: 1.7rem; font-size: .82rem; color: var(--text-soft); border-left: 2px solid var(--cyan); padding-left: .8rem; max-width: 46ch; }
+.hero-demo .terminal { margin: 0; max-width: 100%; }
+.hero-demo .term-out { min-height: 230px; }
+
+/* ════════ Terminal vs app ════════ */
+.vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 2.2rem; align-items: start; }
+.vs-card { padding: 1.8rem 1.7rem; border-radius: 18px; border: 1px solid var(--line); background: var(--bg-soft); }
+.vs-card.dim { background: hsl(224 22% 9.5%); opacity: .92; }
+.vs-card.hot { border-color: hsl(187 94% 53% / .45); box-shadow: 0 0 44px hsl(187 94% 53% / .08), inset 0 0 0 1px hsl(187 94% 53% / .06); }
+.vs-tag { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; color: var(--text-soft); margin-bottom: .9rem; }
+.vs-card .checks li, .vs-card .crosses li { font-size: .96rem; }
+
+/* ════════ Empty proof ════════ */
+.empty-proof { max-width: 760px; margin: 2.2rem auto 0; text-align: center; padding: 2.4rem 2rem; border: 1px dashed var(--line); border-radius: 20px; background: linear-gradient(180deg, hsl(187 94% 53% / .04), transparent 60%), var(--bg-soft); }
+.ep-big { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.2rem, 1rem + 1.1vw, 1.7rem); line-height: 1.3; }
+.ep-sub { color: var(--text-soft); margin: 1.1rem auto 0; font-size: 1rem; max-width: 62ch; }
+
+/* ════════ Cost box ════════ */
+.cost-box { max-width: 720px; margin: 2.2rem auto 0; text-align: left; padding: 1.5rem 1.7rem; border: 1px solid hsl(42 96% 58% / .28); border-radius: 16px; background: hsl(42 96% 58% / .05); }
+.cost-box .cb-h { font-family: var(--font-head); font-weight: 800; font-size: 1rem; margin-bottom: .5rem; }
+.cost-box p { color: var(--text-soft); font-size: .95rem; }
+.cost-box strong { color: var(--text); }
+
+/* ════════ After pay ════════ */
+.ap-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.2rem; }
+.ap-step { padding: 1.8rem 1.5rem; border: 1px solid var(--line); border-radius: 16px; background: var(--bg-soft); transition: transform .3s var(--ease), border-color .3s; }
+.ap-step:hover { transform: translateY(-4px); border-color: hsl(187 94% 53% / .35); }
+.ap-n { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--cyan); color: hsl(225 25% 8%); font-family: var(--font-head); font-weight: 800; margin-bottom: .9rem; }
+.ap-step p { color: var(--text-soft); font-size: .92rem; }
+
+/* ════════ Big statement ════════ */
+.big-statement { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.4rem, 1.05rem + 1.8vw, 2.3rem); line-height: 1.25; color: var(--text); margin: 1.8rem 0; letter-spacing: -.01em; }
+.big-statement .mut { font-weight: 700; }
+
+/* ════════ Focus visible ════════ */
+.btn:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+
+/* ════════ v2 responsive ════════ */
+@media (max-width: 880px) {
+  .hero { text-align: left; padding: clamp(4rem, 9vh, 6rem) 0 1rem; }
+  .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .sub-left, .built-badge { max-width: none; }
+  .vs-grid, .ap-steps { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .cta-row.left .btn { width: 100%; text-align: center; }
+}

@@ -132,13 +132,13 @@ function runStep() {
 const buddy = document.getElementById('buddy');
 const bubble = document.getElementById('buddy-bubble');
 const BUDDY_STOPS = [
-  { sel: '.term-section', mood: 'normal',  say: "That's me in 20 minutes. I type fast." },
+  { sel: '.vs-section',   mood: 'normal',  say: "A chat box talks. I do the work." },
   { sel: '.pain',         mood: 'worried', say: "The red text isn't angry. It's just dramatic." },
   { sel: '.manifesto',    mood: 'normal',  say: 'No Lambos here. Only clean folders.' },
   { sel: '.panel',        mood: 'happy',   say: 'Module 4 is my favorite. I break things so you don’t.' },
   { sel: '.browser',      mood: 'normal',  say: 'Your classroom. A human answers in there.' },
   { sel: '.who',          mood: 'normal',  say: 'Tested on real beginners. I watched.' },
-  { sel: '.quotes',       mood: 'happy',   say: 'Real people. I met them.' },
+  { sel: '.empty-proof',  mood: 'normal',  say: 'No fake reviews here. I would know.' },
   { sel: '.pricing',      mood: 'excited', say: 'One pizza. The whole door.' },
   { sel: '.faq',          mood: 'worried', say: 'Scared of a dumb question? No such thing in here.' },
   { sel: '.final',        mood: 'happy',   say: 'See you inside. I’ll keep your seat warm.' },
