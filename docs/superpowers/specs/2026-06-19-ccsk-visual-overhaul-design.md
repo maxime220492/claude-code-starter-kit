@@ -31,6 +31,10 @@ Inspiration video "Pourquoi j'utilise Claude Code uniquement dans le terminal"
 - The **slash command deck**: `/rewind`, `/compact`, `/context`, `/agents`, `/model`, `/effort`,
   status line, session resume — present in terminal, missing/limited elsewhere.
 
+Second reference, short jn-uAU7KOpI: a rapid `/command → payoff` reel (`/brainstorm`,
+`/writing-plans`, `/frontend-design`, `/execute`, `/skillator`, `/firecrawl`, …) selling a
+ready-to-use arsenal. Drives the new landing "Your arsenal" section (3b) and `command-deck.png`.
+
 ## Architecture — the illustration pipeline (unchanged, extended)
 
 ```
@@ -80,9 +84,26 @@ Starter vs power level shown via cy (starter) / am (power) accenting, matching t
 |------|---------|---------|
 | `interface-gui-vs-cli.png` | "Terminal vs App" | The video's core schematic: click-apps vs text-apps, "closer to the machine". Replaces bullet text. |
 | `three-ways.png` | near hero / vs | 3 ways to run Claude Code, terminal highlighted. |
-| `command-deck.png` | curriculum / vault teaser | Slash-command deck preview (teaser of course). |
-| `toolbox-strip.png` | new mini-section before pricing | 4-poster preview → "what's in the Vault". |
+| `command-deck.png` | new "Your arsenal" section | Slash-command reel: `/command → what it does` pairs, in the spirit of short jn-uAU7KOpI. |
+| `toolbox-strip.png` | "Your arsenal" section | 4-poster preview (MCP/Skills/Tools/Repos) → "what's in the Vault". |
 | refresh `c-workbench`, `a-brain-hands`, `install-steps` | manifesto / roadmap / setup | Re-wire the orphaned illustrations (currently in `img/` but unreferenced) and refresh to the pushed style. |
+
+### 3b. The "Your arsenal" landing section (new — explicit selling point)
+A dedicated section that **sells what the kit hands you**: a curated arsenal, framed honestly.
+Required so the landing makes the Vault's value unmistakable (creator request, ref short jn-uAU7KOpI).
+- **Headline angle:** "You don't just learn it. You get the whole kit handed to you." — the best
+  **MCP connectors, skills, tools, GitHub repos, and — above all — the Claude Code commands** that
+  run it day to day.
+- **Command reel (centerpiece):** `command-deck.png` styled like the short — a stack of
+  `/brainstorm → refine any idea`, `/writing-plans → a real plan first`, `/frontend-design →
+  no generic-AI look`, `/execute → it does the task`, `/firecrawl → live web data`, etc. Pulls
+  real commands/skills the course actually teaches or links.
+- **Arsenal grid:** five labelled lanes — **Commands · MCP · Skills · Tools · Repos** — each with
+  its icon and a 1-line payoff, previewing `toolbox-strip.png`.
+- **Honesty guardrail:** we **hand-pick and point you to** the best of each, **teach the commands**,
+  and ship **copy-paste briefings** so you wield them in seconds. No false "one-command installs
+  20 agents" claim; the value is curation + teaching + briefings, stated plainly. Keep the page's
+  existing honest tone (refund chip, real cost box).
 
 ### 4. Course pedagogy (the priority)
 Beyond wiring the 4 posters into the Power Vault lessons:
