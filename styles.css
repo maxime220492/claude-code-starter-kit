@@ -15,7 +15,7 @@
   --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
   --text-hero: clamp(2.1rem, 1rem + 4.5vw, 4.3rem);
   --text-h2: clamp(1.6rem, 1rem + 2.2vw, 2.6rem);
-  --space-section: clamp(4.5rem, 3rem + 5vw, 8.5rem);
+  --space-section: clamp(3rem, 2rem + 3.5vw, 6rem);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -397,3 +397,23 @@ figure.illus-fig { margin: 1.6rem 0 0; }
 /* ════════ Your arsenal ════════ */
 .arsenal .sub { max-width: 64ch; margin-inline: auto; }
 .arsenal .caption { margin-top: .8rem; }
+
+/* ════════ Mid-page CTAs ════════ */
+.mid-cta { margin-top: var(--space-section); }
+.mid-cta .caption { margin-top: .7rem; }
+
+/* ════════ Collapsible illustration ════════ */
+.illus-details { margin: 1.4rem auto 0; max-width: 760px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-soft); overflow: hidden; }
+.illus-details > summary { cursor: pointer; padding: 14px 18px; font-family: var(--font-mono); font-size: .9rem; color: var(--cyan); list-style: none; }
+.illus-details > summary::-webkit-details-marker { display: none; }
+.illus-details > summary::before { content: "▸ "; color: var(--cyan); }
+.illus-details[open] > summary::before { content: "▾ "; }
+.illus-details .illus { margin: 0 18px 18px; width: calc(100% - 36px); }
+
+/* ════════ Personal tier value anchor ════════ */
+.tier-anchor { font-size: .95rem; color: var(--text); background: hsl(42 96% 58% / .08); border: 1px solid hsl(42 96% 58% / .25); border-radius: 10px; padding: 10px 14px; margin: 0 0 1rem; }
+
+/* ════════ Mobile: show the live terminal first, before the copy ════════ */
+@media (max-width: 880px) {
+  .hero-demo { order: -1; margin-bottom: 1.4rem; }
+}
