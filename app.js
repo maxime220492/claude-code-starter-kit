@@ -136,7 +136,7 @@ const BUDDY_STOPS = [
   { sel: '.pain',         mood: 'worried', say: "The red text isn't angry. It's just dramatic." },
   { sel: '.manifesto',    mood: 'normal',  say: 'No Lambos here. Only clean folders.' },
   { sel: '.panel',        mood: 'happy',   say: 'Module 4 is my favorite. I break things so you don’t.' },
-  { sel: '.browser',      mood: 'normal',  say: 'Your classroom. A human answers in there.' },
+  { sel: '.arsenal',      mood: 'excited', say: 'The whole toolbox, handed to you. Even I am impressed.' },
   { sel: '.who',          mood: 'normal',  say: 'Tested on real beginners. I watched.' },
   { sel: '.empty-proof',  mood: 'normal',  say: 'No fake reviews here. I would know.' },
   { sel: '.pricing',      mood: 'excited', say: 'One pizza. The whole door.' },
