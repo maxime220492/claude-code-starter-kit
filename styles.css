@@ -397,11 +397,22 @@ figure.illus-fig { margin: 1.6rem 0 0; }
 /* ════════ Your arsenal ════════ */
 .arsenal .sub { max-width: 64ch; margin-inline: auto; }
 .arsenal .caption { margin-top: .8rem; }
-.arsenal-examples { list-style: none; max-width: 620px; margin: 1.4rem auto 0; padding: 0; display: grid; gap: .7rem; }
-.arsenal-examples li { position: relative; padding: .7rem 1rem .7rem 2.4rem; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 11px; font-size: .96rem; color: var(--text-soft); line-height: 1.4; }
-.arsenal-examples li::before { content: "›"; position: absolute; left: 1rem; top: .6rem; color: var(--cyan); font-weight: 700; }
-.arsenal-examples strong { font-weight: 600; }
-.arsenal-examples em { color: var(--text); font-style: italic; }
+.arsenal-h3 { font-family: var(--font-head); font-weight: 800; font-size: clamp(1.3rem, 1rem + 1.2vw, 1.9rem); margin: 2.4rem 0 .6rem; }
+/* product "what's included" manifest */
+.kit-includes { list-style: none; max-width: 660px; margin: 1.8rem auto 0; padding: 1.5rem 1.7rem; display: grid; gap: .85rem; background: radial-gradient(520px 200px at 50% -20%, hsl(187 94% 53% / .09), transparent 70%), var(--bg-soft); border: 1px solid hsl(187 94% 53% / .3); border-radius: 18px; text-align: left; }
+.kit-includes li { position: relative; padding-left: 2.1rem; color: var(--text-soft); line-height: 1.5; font-size: 1rem; }
+.kit-includes li::before { content: "✓"; position: absolute; left: 0; top: .1rem; color: hsl(225 25% 8%); background: var(--cyan); width: 1.35rem; height: 1.35rem; border-radius: 50%; display: grid; place-items: center; font-size: .82rem; font-weight: 800; }
+.kit-includes strong { color: #fff; font-weight: 600; }
+/* value-count strip */
+.value-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; max-width: 760px; margin: 1.2rem auto .4rem; }
+.value-strip span { font-family: var(--font-mono); font-size: .86rem; color: var(--text); background: var(--bg-soft); border: 1px solid var(--line); border-radius: 99px; padding: .5rem .9rem; }
+.value-strip b { color: var(--cyan); font-weight: 700; }
+/* 2x2 poster gallery */
+.poster-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.2rem 0 0; }
+.poster-grid .illus-fig { margin: 0; }
+.poster-grid .illus { margin: 0; transition: transform .2s var(--ease), border-color .2s; }
+.poster-grid .illus:hover { transform: translateY(-3px); border-color: hsl(187 94% 53% / .5); }
+@media (max-width: 760px) { .poster-grid { grid-template-columns: 1fr; } }
 
 /* ════════ Mid-page CTAs ════════ */
 .mid-cta {
